@@ -1,15 +1,15 @@
-apiVersion: traefik.containo.us/v1alpha1
-kind: IngressRoute
-metadata:
-  name: dummy-go-api-route
-  namespace: dummy-go-api
-spec:
-  entryPoints:
-    - web
-  routes:
-    - kind: Rule
-      match: Host(`dummy-go-api.stephenc.ml`)
-      priority: 10
-      services:
-        - name: dummy-go-api-svc
-          port: 8089
+# apiVersion: traefik.containo.us/v1alpha1
+# kind: IngressRoute
+# metadata:
+#   name: dummy-go-api-route
+#   namespace: dummy-go-api
+# spec:
+#   entryPoints:
+#     - web
+#   routes:
+#     - kind: Rule
+#       match: Host(`dummy-go-api.stephenc.ml`)
+#       priority: 10
+#       services:
+#         - name: dummy-go-api-svc
+#           port: 8089
