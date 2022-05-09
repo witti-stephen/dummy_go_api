@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dummy-go-api-svc
+  namespace: dummy-go-api
+spec:
+  ports:
+  - port: 8089
+    targetPort: 16489
+  selector:
+    app: dummy-go-api

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:  
+  name: dummy-go-api
+  namespace: dummy-go-api
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: dummy-go-api
+  template:
+    metadata:
+      labels:
+        app: dummy-go-api
+    spec:
+      containers:
+      - image: registry.stephenc.ml:5443/dummy-go-api:0.0.0.1
+        name: dummy-go-api
+        ports:
+        - containerPort: 16489
+    command: ["dummy-gin-api"]
