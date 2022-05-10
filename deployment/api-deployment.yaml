@@ -14,6 +14,8 @@ spec:
       labels:
         app: dummy-go-api
     spec:
+      imagePullSecrets:
+      - name: registrykey-stephenc-ml
       containers:
       - image: registry.stephenc.ml:5443/dummy-go-api:0.0.0.1
         name: dummy-go-api
