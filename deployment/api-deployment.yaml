@@ -21,4 +21,4 @@ spec:
         name: dummy-go-api
         ports:
         - containerPort: 16489
-        command: ["dummy-gin-api"]
+        command: ["/app/dummy-gin-api"]
