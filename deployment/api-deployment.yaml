@@ -17,7 +17,7 @@ spec:
       imagePullSecrets:
       - name: registrykey-stephenc-ml
       containers:
-      - image: registry.stephenc.ml:5443/dummy-go-api:0.0.0.1
+      - image: registry.stephenc.ml:5443/dummy-go-api:0.0.0.2
         name: dummy-go-api
         ports:
         - containerPort: 16489

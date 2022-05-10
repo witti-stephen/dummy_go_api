@@ -14,6 +14,7 @@ type returnData struct {
 var possibleReturns = []returnData{
 	{ID: "0", Message: "This is a test"},
 	{ID: "1", Message: "This is another test"},
+	{ID: "2", Message: "Yet another test la"},
 }
 
 func getResult(c *gin.Context) {
